@@ -48,7 +48,7 @@ All React source code files (components, styles, entry points) are located insid
 
 - `src/Components/` → Contains `Form.jsx` and `SuccessPage.jsx`
 - `src/App.jsx` and `main.jsx` → Setup routing and render the app
-- `src/App.css`, `index.css` → Custom styling
+- `src/App.css` → Custom styling
 ---
 
 ## Author
