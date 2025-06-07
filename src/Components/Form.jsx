@@ -113,6 +113,7 @@ function Form() {
         <div className="field">
           <label>Email</label>
           <input
+
             name="email"
             value={form.email}
             onChange={handleChange}
@@ -134,6 +135,7 @@ function Form() {
             placeholder='Enter your password here'
           />
           <div className="checkbox-container">
+
             <input
               className="checkbox"
               type="checkbox"
@@ -145,8 +147,11 @@ function Form() {
         </div>
 
         <div className="field">
+
           <label>Phone No.</label>
+
           <div className="phone-input">
+
             <input name="phoneCode" placeholder="+91" value={form.phoneCode} onChange={handleChange} style={{ width: '60px' }} />
             <input name="phoneNumber" placeholder="10 digit number" value={form.phoneNumber} onChange={handleChange} />
           </div>
@@ -162,8 +167,10 @@ function Form() {
               <option value="India">India</option>
               <option value="USA">USA</option>
             </select>
+
             <span>{errors.country}</span>
           </div>
+
 
           <div className="field">
             <label>City</label>
@@ -177,6 +184,7 @@ function Form() {
                 <option value="New York">New York</option>
                 <option value="San Francisco">San Francisco</option>
               </>}
+              
             </select>
             <span>{errors.city}</span>
           </div>
