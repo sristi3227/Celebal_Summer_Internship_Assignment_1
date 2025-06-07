@@ -44,19 +44,19 @@ function Form() {
 
     
     if (form.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-      errs.email = 'Invalid email format'
+      errs.email = 'This is Invalid email format. Please enter a valid email address.'
     }
     
     if (form.phoneNumber && !/^\d{10}$/.test(form.phoneNumber)) {
-      errs.phoneNumber = 'Must be 10 digits'
+      errs.phoneNumber = 'Phone number must be of 10 digits'
     }
 
     if (form.pan && !/^[A-Z]{5}[0-9]{4}[A-Z]{1}$/.test(form.pan)) {
-      errs.pan = 'Invalid PAN format'
+      errs.pan = 'This is Invalid PAN format. Please enter a valid PAN number, (for example: ABCDE1234F)'
     }
 
     if (form.aadhar && !/^\d{12}$/.test(form.aadhar)) {
-      errs.aadhar = 'Must be 12 digits'
+      errs.aadhar = 'Aadhar number must be of 12 digits'
     }
 
     return errs
@@ -184,7 +184,7 @@ function Form() {
                 <option value="New York">New York</option>
                 <option value="San Francisco">San Francisco</option>
               </>}
-              
+
             </select>
             <span>{errors.city}</span>
           </div>
