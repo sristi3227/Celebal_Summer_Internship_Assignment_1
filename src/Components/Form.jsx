@@ -24,20 +24,7 @@ function Form() {
   const [errors, setErrors] = useState({})
   const [isFormFilled, setIsFormFilled] = useState(false)
 
-  const validateField = (name, value) => {
-    switch (name) {
-      case 'email':
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ? '' : 'Invalid email format'
-      case 'phoneNumber':
-        return /^\d{10}$/.test(value) ? '' : 'Must be 10 digits'
-      case 'pan':
-        return /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/.test(value) ? '' : 'Invalid PAN format'
-      case 'aadhar':
-        return /^\d{12}$/.test(value) ? '' : 'Must be 12 digits'
-      default:
-        return value.trim() ? '' : 'This field is required'
-    }
-  }
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target
