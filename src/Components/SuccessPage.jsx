@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation, Link } from 'react-router-dom'
-
+import '../App.css'
 function SuccessPage() {
   const { state } = useLocation()
 

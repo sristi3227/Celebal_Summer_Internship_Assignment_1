@@ -30,10 +30,10 @@ function Form() {
     const { name, value } = e.target
     setForm(prev => ({ ...prev, [name]: value }))
 
-    // Remove the error when user starts typing
+    
     setErrors(prev => ({ ...prev, [name]: '' }))
 
-    // Check if all fields are filled
+    
     const updatedForm = { ...form, [name]: value }
     const isFilled = Object.values(updatedForm).every(val => val.trim() !== '')
     setIsFormFilled(isFilled)
@@ -42,7 +42,7 @@ function Form() {
   const validate = () => {
     let errs = {}
 
-    // Only validate if the field has a value
+    
     if (form.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
       errs.email = 'Invalid email format'
     }
