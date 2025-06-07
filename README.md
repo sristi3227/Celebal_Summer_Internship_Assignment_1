@@ -40,4 +40,20 @@ The task was to create a responsive React form that includes:
 - Local React `useState` and `useEffect` hooks
 
 ---
+## 📁 Folder Structure
 
+Assignment_1/
+├── public/
+├── src/
+│ ├── assets/
+│ └── Components/
+│ ├── Form.jsx # Main form component
+│ └── SuccessPage.jsx # Shows submitted data
+├── App.jsx # Entry component using routes
+├── App.css # App-wide styles
+├── index.css 
+├── index.html 
+├── main.jsx 
+├── vite.config.js 
+├── eslint.config.js 
+├── package.json 
