@@ -1,6 +1,6 @@
 # React Form with Validation — Celebal Summer Internship Task
 
-This project is part of the Celebal Summer Internship assignment.
+This is Celebal Summer Internship First assignment.
 
 ## 🚀 Task Overview
 
