@@ -7,8 +7,8 @@ This is Celebal Summer Internship First assignment.
 The task was to create a responsive React form that includes:
 
 - ✅ Field validation (required fields)
-- ✅ Real-time error messages
-- ✅ Submit button disabled until the form is valid
+- ✅ Display error messages
+- ✅ Submit button disabled until the form is filled
 - ✅ Password field with show/hide functionality
 - ✅ On successful submission, redirect to a new route showing all entered details
 
